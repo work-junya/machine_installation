@@ -1,4 +1,41 @@
-<!-- ヒーローセクション -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社テクノ未来 | 産業機械の組立・据付・移設工事</title>
+    <meta name="description" content="株式会社テクノ未来は産業機械の組立・据付・移設工事などを手掛ける会社です。安心と信頼の技術で、お客様の生産活動をサポートします。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <h1>株式会社テクノ未来</h1>
+                    <p>産業機械の組立・据付・移設工事</p>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="company.html">会社紹介</a></li>
+                    <li><a href="service.html">事業紹介</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
 <section class="hero" style="background-image: url('images/machine_installation_header.png');">
     <div class="container">
         <div class="hero-content">
@@ -189,3 +226,30 @@
         </div>
     </div>
 </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ハンバーガーメニューの動作
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // スクロール時のヘッダー表示制御
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // 下にスクロール
+                document.querySelector('header').style.top = `-${document.querySelector('header').offsetHeight}px`;
+            } else {
+                // 上にスクロール
+                document.querySelector('header').style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
