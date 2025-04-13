@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 株式会社テクノ未来</title>
+    <meta name="description" content="株式会社テクノ未来へのお問い合わせページです。ご質問やご相談はお気軽にお問い合わせください。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <h1>株式会社テクノ未来</h1>
+                    <p>産業機械の組立・据付・移設工事</p>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="company.html">会社紹介</a></li>
+                    <li><a href="service.html">事業紹介</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ページヘッダー -->
+    <section class="page-header" style="background-image: url('images/plant_layout_engineering.png');">
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="section-title">
+                <h2>お問い合わせ</h2>
+                <p>ご質問やご相談はお気軽にお問い合わせください</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>お問い合わせ方法</h3>
+                    <p>以下のフォームまたはお電話・メールにてお問い合わせください。担当者が迅速に対応いたします。</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>お電話でのお問い合わせ</h4>
+                                <p>03-XXXX-XXXX</p>
+                                <p class="small">受付時間：平日 9:00〜18:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>メールでのお問い合わせ</h4>
+                                <p>info@techno-machinery.co.jp</p>
+                                <p class="small">24時間受付（返信は営業時間内）</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>所在地</h4>
+                                <p>〒XXX-XXXX 東京都○○区△△町X-X-X</p>
+                                <p class="small">最寄駅：○○線 △△駅 徒歩10分</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="office-map">
+                        <h3>アクセスマップ</h3>
+                        <img src="images/factory_layout_change.jpeg" alt="アクセスマップ">
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>お問い合わせフォーム</h3>
+                    <p class="required-text">※は必須項目です</p>
+                    
+                    <form action="#" method="post" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前<span class="required-mark">※</span></label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">会社名・団体名</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス<span class="required-mark">※</span></label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry-type">お問い合わせ種別<span class="required-mark">※</span></label>
+                            <select id="inquiry-type" name="inquiry-type" class="form-control" required>
+                                <option value="">選択してください</option>
+                                <option value="estimate">お見積り依頼</option>
+                                <option value="service">サービスに関するお問い合わせ</option>
+                                <option value="recruit">採用に関するお問い合わせ</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容<span class="required-mark">※</span></label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <div class="form-group privacy-policy-check">
+                            <input type="checkbox" id="privacy-agree" name="privacy-agree" required>
+                            <label for="privacy-agree">個人情報の取り扱いについて同意する<span class="required-mark">※</span></label>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問セクション -->
+    <section class="faq bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>よくある質問</h2>
+                <p>お客様からよくいただくご質問とその回答</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>対応エリアはどこまでですか？</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>東京本社、大阪営業所、名古屋営業所を拠点に、全国対応しております。海外案件についてもご相談ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>見積りは無料ですか？</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、お見積りは無料です。現地調査が必要な場合も、基本的に無料で対応しております。ただし、遠方の場合は交通費をいただく場合がございます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>工事の納期はどのくらいかかりますか？</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>工事の規模や内容によって異なります。小規模な据付工事であれば数日、大規模な移設工事では数週間から数ヶ月かかる場合もございます。具体的な納期については、お見積り時にご案内いたします。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>休日や夜間の工事は可能ですか？</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、可能です。お客様の生産活動への影響を最小限に抑えるため、休日や夜間の工事にも対応しております。ただし、追加料金が発生する場合がございます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>保証期間はありますか？</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>工事完了後、原則として1年間の保証期間を設けております。保証期間内に当社の施工に起因する不具合が発生した場合は、無償で対応いたします。ただし、お客様の使用方法や経年劣化による不具合は対象外となります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h3>株式会社テクノ未来</h3>
+                    </div>
+                    <p>産業機械の組立・据付・移設工事を専門とする会社です。確かな技術と豊富な経験で、お客様の生産活動を力強くサポートします。</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>リンク</h3>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="company.html">会社紹介</a></li>
+                        <li><a href="service.html">事業紹介</a></li>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒XXX-XXXX 東京都○○区△△町X-X-X</p>
+                    <p><i class="fas fa-phone"></i> 03-XXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@techno-machinery.co.jp</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 株式会社テクノ未来 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ハンバーガーメニューの動作
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // スクロール時のヘッダー表示制御
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // 下にスクロール
+                document.querySelector('header').style.top = `-${document.querySelector('header').offsetHeight}px`;
+            } else {
+                // 上にスクロール
+                document.querySelector('header').style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+        
+        // FAQのアコーディオン動作
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
